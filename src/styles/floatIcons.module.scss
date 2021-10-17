@@ -1,0 +1,39 @@
+.svg-wrap {
+    perspective-origin: 50% 50%;
+    z-index: 0;
+    overflow: visible;
+
+    img {
+        position:absolute;
+        width: 10vw;
+	    bottom: 0;
+	    transform-style: preserve-3d;
+    }
+
+    $total: 15;
+    @for $i from 1 through $total {
+        $scale:random(2) - .4;
+        
+        img:nth-child(#{$i}){
+            left:random(80) * 1%;
+            animation: raise#{$i} 6 + random(10) +s linear infinite;
+            animation-delay:random(5) - 5 + s;
+            //transform: scale(.3 * $i - .6) rotate(random(360) + deg);
+            z-index: $i - 7;
+            filter: blur($i - 6 + px);
+    
+            @keyframes raise#{$i} {
+                from {
+                    opacity: 0;
+                }
+                15% {
+                  opacity: 1;
+                }
+                to {
+                    bottom:150vh;
+                    transform: scale(.2 * $i - .6) rotate(random(360) + deg);
+                }
+            }
+        }
+    }
+}

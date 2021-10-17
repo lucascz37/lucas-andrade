@@ -1,0 +1,38 @@
+body, #___gatsby {
+    height: 100%;
+}
+
+body, h1, p {
+    margin: 0;
+}
+
+*{
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    margin: 0;
+    z-index: 1;
+
+    // Main colors
+    --red-color: #da0037;
+
+    // section properties
+    --font-size-title: 2.5vw;
+    --margin-top-title: 5vh;
+    --margin-top-from-title: 10vh;
+
+    //sidebar width
+    --side-bar-width: 6vw;
+    
+}
+
+main[data-theme="dark"] {
+    --blue-color: #00f2ff;
+    --color-1: #1d1d1d;
+    --color-2: #ededed;
+}
+
+main[data-theme="light"] {
+    --blue-color: #0dc1ca;
+    --color-1: #ededed;
+    --color-2: #1d1d1d;
+}

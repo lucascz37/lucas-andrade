@@ -1,0 +1,21 @@
+.container{
+    display: flex;
+}
+
+.main {
+    background: var(--color-1);
+    flex-grow: 1;
+}
+
+.filler {
+    width: var(--side-bar-width);
+}
+
+.sidebar {
+    position: fixed;
+    width: var(--side-bar-width);
+    height: 100vh;
+    top: 0;
+    right: 0;
+    background-color: #181818;
+}
