@@ -13,8 +13,10 @@ import br from 'images/br.svg';
 const FirstSection = ({ currentTheme, changeTheme }) => {
   const [switcher, setSwitcher] = React.useState(currentTheme === 'light' ? true : false || false);
   const { t } = useTranslation();
-  const lang = localStorage.getItem('gatsby-i18next-language');
+  const [lang, setLang] = React.useState(null);
   const { changeLanguage } = useI18next();
+
+  React.useEffect(() => setLang(localStorage.getItem('gatsby-i18next-language')), []);
 
   function onChangeSwitcher() {
     changeTheme(currentTheme === 'light' ? 'dark' : 'light');
