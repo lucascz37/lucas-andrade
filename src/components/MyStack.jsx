@@ -24,9 +24,8 @@ const MyStack = () => {
 
   const generateLanguageList = (svgArray, to) => svgArray.map(
     (e) => (
-      <Link to={`/${t('MarkdownLink')}/${to}`}>
+      <Link to={`/${t('MarkdownLink')}/${to}`} key={e.key}>
         <img
-          key={e.key}
           alt={e.key}
           className={style.languageIcon}
           src={e.value}
