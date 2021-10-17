@@ -8,7 +8,10 @@ import AboutMe from 'components/AboutMe';
 
 // markup
 const IndexPage = () => {
-  const [theme, setTheme] = React.useState(localStorage.getItem('theme') || 'dark');
+  const [theme, setTheme] = React.useState(undefined);
+
+  React.useEffect(() => { setTheme(localStorage.getItem('theme') || 'dark'); }, []);
+
   return (
     <div className={style.container}>
       <main className={style.main} data-theme={theme}>

@@ -1,5 +1,5 @@
 ---
-slug: "/linguagens/frontend"
+slug: "linguagens/frontend"
 date: "2021-10-04"
 title: "Frontend"
 ---
