@@ -2,7 +2,7 @@
   "name": "lucas-andrade",
   "version": "1.0.0",
   "private": true,
-  "description": "Lucas Andrade",
+  "description": "lucas-andrade",
   "author": "Lucas Andrade",
   "keywords": [
     "gatsby"
@@ -15,31 +15,16 @@
     "clean": "gatsby clean"
   },
   "dependencies": {
-    "babel-plugin-styled-components": "^1.13.2",
-    "gatsby": "^3.11.1",
-    "gatsby-plugin-gatsby-cloud": "^3.0.0",
+    "gatsby": "^5.13.3",
     "gatsby-plugin-google-fonts": "^1.0.1",
-    "gatsby-plugin-react-i18next": "^1.1.1",
-    "gatsby-plugin-sass": "^4.12.0",
-    "gatsby-source-filesystem": "^3.14.0",
-    "gatsby-transformer-remark": "^4.11.0",
-    "i18next": "^21.3.1",
-    "react": "^17.0.1",
-    "react-dom": "^17.0.1",
-    "react-i18next": "^11.12.0",
-    "sass": "^1.38.1",
-    "uuid": "^8.3.2"
-  },
-  "devDependencies": {
-    "eslint": "^7.32.0",
-    "eslint-config-airbnb": "^18.2.1",
-    "eslint-config-prettier": "^8.3.0",
-    "eslint-plugin-import": "^2.24.2",
-    "eslint-plugin-jsx-a11y": "^6.4.1",
-    "eslint-plugin-prettier": "^3.4.1",
-    "eslint-plugin-react": "^7.24.0",
-    "eslint-plugin-react-hooks": "^4.2.0",
-    "gatsby-plugin-root-import": "^2.0.7",
-    "prettier": "^2.3.2"
+    "gatsby-plugin-netlify": "^5.1.1",
+    "gatsby-plugin-react-i18next": "^3.0.1",
+    "gatsby-plugin-root-import": "^2.0.9",
+    "gatsby-plugin-sass": "^6.13.1",
+    "gatsby-source-filesystem": "^5.13.1",
+    "gatsby-transformer-remark": "^6.13.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "sass": "^1.74.1"
   }
 }

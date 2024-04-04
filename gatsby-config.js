@@ -1,43 +1,46 @@
+/**
+ * @type {import('gatsby').GatsbyConfig}
+ */
 module.exports = {
   siteMetadata: {
-    siteUrl: 'https://www.yourdomain.tld',
-    title: 'Lucas Andrade',
+    title: `lucas-andrade`,
+    siteUrl: `https://www.yourdomain.tld`,
   },
   plugins: [
-    'gatsby-plugin-gatsby-cloud',
-    'gatsby-plugin-root-import',
-    'gatsby-plugin-sass',
+    "gatsby-plugin-netlify",
+    "gatsby-plugin-sass",
+    "gatsby-plugin-root-import",
     {
-      resolve: 'gatsby-plugin-google-fonts',
+      resolve: "gatsby-plugin-google-fonts",
       options: {
-        fonts: ['Roboto:400', 'Open Sans:400'],
-        display: 'swap',
+        fonts: ["Roboto:400", "Open Sans:400"],
+        display: "swap",
       },
     },
     {
-      resolve: 'gatsby-source-filesystem',
+      resolve: "gatsby-source-filesystem",
       options: {
-        name: 'markdown-pages',
+        name: "markdown-pages",
         path: `${__dirname}/src/markdown-pages`,
       },
     },
     {
-      resolve: 'gatsby-transformer-remark',
+      resolve: "gatsby-transformer-remark",
       options: {},
     },
     {
-      resolve: 'gatsby-source-filesystem',
+      resolve: "gatsby-source-filesystem",
       options: {
         path: `${__dirname}/src/locales`,
-        name: 'locale',
+        name: "locale",
       },
     },
     {
-      resolve: 'gatsby-plugin-react-i18next',
+      resolve: "gatsby-plugin-react-i18next",
       options: {
-        localeJsonSourceName: 'locale', // name given to `gatsby-source-filesystem` plugin.
-        languages: ['en', 'pt'],
-        defaultLanguage: 'en',
+        localeJsonSourceName: "locale", // name given to `gatsby-source-filesystem` plugin.
+        languages: ["en", "pt"],
+        defaultLanguage: "pt",
         i18nextOptions: {
           interpolation: {
             escapeValue: false,
